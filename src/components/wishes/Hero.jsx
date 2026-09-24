@@ -1,8 +1,4 @@
 import { motion } from "framer-motion";
-
-import Petals from "../common/Petals";
-import Toran from "../common/Toran";
-
 import "./Hero.css";
 
 const container = {
@@ -18,9 +14,6 @@ const rise = {
 export default function Hero({ play }) {
   return (
     <section className="hero">
-      <Toran />
-      {play && <Petals />}
-
       <motion.div
         className="hero-body"
         variants={container}
@@ -42,21 +35,6 @@ export default function Hero({ play }) {
 
         <motion.div variants={rise} className="divider">
           <i /> <b /> <i />
-        </motion.div>
-
-        <motion.div variants={rise} className="scroll">
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M6 9l6 6 6-6" />
-          </svg>
         </motion.div>
       </motion.div>
     </section>
