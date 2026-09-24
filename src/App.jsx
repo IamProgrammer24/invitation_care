@@ -8,7 +8,7 @@ import From from "./components/wishes/From";
 import ShareFooter from "./components/wishes/ShareFooter";
 
 export default function App() {
-  const [opened, setOpened] = useState(false);
+  const [started, setStarted] = useState(false);
   const message = config.message[config.lang];
 
   useEffect(() => {
@@ -16,17 +16,17 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = opened ? "" : "hidden";
-  }, [opened]);
+    document.body.style.overflow = started ? "" : "hidden";
+  }, [started]);
 
   return (
     <>
-      <Hero play={opened} />
+      <Hero play={started} />
       <MessageCard message={message} />
       <NineColours lang={config.lang} startDate={config.startDate} />
       <From from={config.from} photo={config.photo} lang={config.lang} />
       <ShareFooter lang={config.lang} message={message} />
-      {!opened && <OpenScreen onOpen={() => setOpened(true)} />}
+      <OpenScreen onStart={() => setStarted(true)} />
     </>
   );
 }

@@ -2,58 +2,23 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-around;
-  padding: 0 6px;
-  border-top: 3px solid var(--accent);
+  width: 100%;
+  height: auto;
   z-index: 3;
+  pointer-events: none;
+  overflow: visible;
 }
 
-.toran-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transform-origin: top center;
-  animation: sway 3.4s ease-in-out infinite alternate;
+.swing {
+  animation: swing 3.2s ease-in-out infinite alternate;
   will-change: transform;
 }
 
-.toran-thread {
-  width: 2px;
-  background: var(--accent);
-  display: block;
-}
-
-.toran-bloom {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: block;
-  position: relative;
-}
-
-.toran-bloom::after {
-  content: "";
-  position: absolute;
-  inset: 7px;
-  border-radius: 50%;
-  background: var(--bg-deep);
-  opacity: 0.35;
-}
-
-.b-gold {
-  background: var(--accent);
-}
-.b-saffron {
-  background: var(--accent-2);
-}
-
-@keyframes sway {
+@keyframes swing {
   from {
-    transform: rotate(-4deg);
+    transform: rotate(-3deg);
   }
   to {
-    transform: rotate(4deg);
+    transform: rotate(3deg);
   }
 }

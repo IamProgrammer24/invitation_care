@@ -1,0 +1,67 @@
+.curtain {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+}
+
+.curtain-left {
+  left: 0;
+}
+.curtain-right {
+  right: 0;
+}
+
+.curtain-art {
+  position: absolute;
+  inset: 0;
+}
+
+.curtain-right .curtain-art {
+  transform: scaleX(-1);
+}
+
+.curtain-art > svg:not(.rope) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.rope {
+  position: absolute;
+  top: 42.4%;
+  left: 0;
+  width: 17%;
+  height: 14px;
+  opacity: 0;
+  overflow: visible;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.tassel {
+  position: absolute;
+  left: 4.5%;
+  top: 43.4%;
+  opacity: 0;
+}
+
+.tassel-svg {
+  display: block;
+  width: 26px;
+  height: auto;
+  transform-origin: 50% 0;
+  animation: tswing 3.4s ease-in-out infinite alternate;
+}
+
+@keyframes tswing {
+  from {
+    transform: rotate(-2.5deg);
+  }
+  to {
+    transform: rotate(2.5deg);
+  }
+}

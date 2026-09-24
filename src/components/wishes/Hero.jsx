@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import Toran from "../common/Toran";
+
 import Petals from "../common/Petals";
+import Toran from "../common/Toran";
+
 import "./Hero.css";
 
 const container = {

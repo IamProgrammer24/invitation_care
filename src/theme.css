@@ -10,6 +10,9 @@
   --font-hindi: "Yatra One", "Noto Sans Devanagari", sans-serif;
   --font-script: "Great Vibes", cursive;
   --font-body: "Poppins", "Noto Sans Devanagari", sans-serif;
+  --curtain-a: #5a0f22;
+  --curtain-b: #8c1c36;
+  --bg-glow: #a02a44;
 }
 
 [data-theme="pastel"] {
@@ -20,6 +23,9 @@
   --card-text: #6b2c3e;
   --accent: #e0a24a;
   --accent-2: #ef8fa5;
+  --curtain-a: #e9a3b8;
+  --curtain-b: #f6c9d6;
+  --bg-glow: #fff5f8;
 }
 
 * {
@@ -41,6 +47,7 @@ body {
   margin: 0 auto;
   min-height: 100dvh;
   overflow-x: hidden;
+  position: relative;
 }
 
 .hindi {
