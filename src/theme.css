@@ -1,5 +1,6 @@
 :root,
 [data-theme="maroon"] {
+  --bg-image: none;
   --bg: #7a1a2e;
   --bg-deep: #4a0f1c;
   --text: #fff7ec;
@@ -64,4 +65,24 @@ body {
     animation: none !important;
     transition: none !important;
   }
+}
+
+.page-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 480px;
+  margin: 0 auto;
+  z-index: 0;
+  pointer-events: none;
+  background-color: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+:root:not([data-theme="pastel"]) .page-bg {
+  background-image: url("/images/bg-maroon.png");
 }

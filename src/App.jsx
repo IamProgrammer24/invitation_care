@@ -21,6 +21,7 @@ export default function App() {
 
   return (
     <>
+      <div className="page-bg" aria-hidden="true" />
       <Hero play={started} />
       <MessageCard message={message} />
       <NineColours lang={config.lang} startDate={config.startDate} />
