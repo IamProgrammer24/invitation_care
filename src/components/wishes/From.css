@@ -1,0 +1,40 @@
+.from {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.arch {
+  width: 170px;
+  height: 220px;
+  margin: 0 auto 26px;
+  background: var(--card);
+  border: 4px solid var(--accent);
+  border-radius: 85px 85px 14px 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.from-label {
+  margin: 0;
+  font-size: 14px;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+.from-name {
+  margin: 4px 0 0;
+  font-family: var(--font-script);
+  font-size: clamp(38px, 12vw, 50px);
+  line-height: 1.2;
+  color: var(--text);
+}

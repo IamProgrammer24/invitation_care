@@ -1,0 +1,104 @@
+.open-screen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 480px;
+  margin: 0 auto;
+  z-index: 100;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: var(--bg-deep)
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.14) 0 2px,
+      transparent 2px 28px
+    );
+  will-change: transform;
+}
+
+.curtain-l {
+  left: 0;
+  border-right: 2px solid var(--accent);
+}
+
+.curtain-r {
+  right: 0;
+  border-left: 2px solid var(--accent);
+}
+
+.open-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.diya-wrap {
+  will-change: transform, opacity;
+}
+
+.hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.pulse {
+  color: var(--accent);
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+.hint-hi {
+  font-family: var(--font-hindi);
+  color: var(--text);
+  font-size: 14px;
+}
+
+.flame-inner {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: flicker 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  25% {
+    transform: scale(0.96, 1.05) rotate(-1.5deg);
+  }
+  50% {
+    transform: scale(1.03, 0.97) rotate(1deg);
+  }
+  75% {
+    transform: scale(0.98, 1.04) rotate(-0.5deg);
+  }
+}

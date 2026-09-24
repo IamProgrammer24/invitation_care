@@ -1,0 +1,59 @@
+.share-footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 24px 22px calc(28px + env(safe-area-inset-bottom));
+}
+
+.share-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 999px;
+  padding: 15px 30px;
+  background: var(--accent-2);
+  color: #3a0a15;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.share-btn:active {
+  transform: scale(0.96);
+}
+
+.confetti {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -4px 0 0 -4px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.credit {
+  margin-top: 56px;
+  font-size: 12px;
+  opacity: 0.75;
+  line-height: 1.7;
+}
+
+.credit p {
+  margin: 0;
+}
+
+.credit a {
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}

@@ -1,0 +1,51 @@
+.section {
+  position: relative;
+  z-index: 2;
+  padding: 40px 22px;
+}
+
+.msg-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--card);
+  color: var(--card-text);
+  border: 2px solid var(--accent);
+  border-radius: 22px;
+  padding: 44px 26px 38px;
+  text-align: center;
+}
+
+.msg-card::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px dashed var(--accent);
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+.mandala {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  right: -46px;
+  top: -46px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.msg-title {
+  position: relative;
+  font-family: var(--font-hindi);
+  font-weight: 400;
+  font-size: 26px;
+  margin: 0 0 16px;
+  color: var(--card-text);
+}
+
+.msg-text {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0;
+}

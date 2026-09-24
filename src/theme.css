@@ -1,0 +1,60 @@
+:root,
+[data-theme="maroon"] {
+  --bg: #7a1a2e;
+  --bg-deep: #4a0f1c;
+  --text: #fff7ec;
+  --card: #fff7ec;
+  --card-text: #7a1a2e;
+  --accent: #f4b400;
+  --accent-2: #f28c28;
+  --font-hindi: "Yatra One", "Noto Sans Devanagari", sans-serif;
+  --font-script: "Great Vibes", cursive;
+  --font-body: "Poppins", "Noto Sans Devanagari", sans-serif;
+}
+
+[data-theme="pastel"] {
+  --bg: #fde8ee;
+  --bg-deep: #f6c9d6;
+  --text: #6b2c3e;
+  --card: #ffffff;
+  --card-text: #6b2c3e;
+  --accent: #e0a24a;
+  --accent-2: #ef8fa5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+.hindi {
+  font-family: var(--font-hindi);
+  color: var(--accent);
+}
+
+.script {
+  font-family: var(--font-script);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
