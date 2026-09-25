@@ -4,7 +4,7 @@ export default {
   lang: "en",
 
   from: "Our Family",
-  photo: "/images/riya.png",
+  photo: "/images/riya.webp",
 
   message: {
     en: "May Maa Durga bless your home with joy, health, and endless happiness this Navratri.",

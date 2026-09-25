@@ -5,7 +5,7 @@ import CARDS from "../../data/cards";
 import "./BlessingsJourney.css";
 
 const READY = 9;
-const EXT = "png";
+const EXT = "webp";
 const GAP = 14;
 
 export default function BlessingsJourney({ lang, startDate }) {
@@ -118,7 +118,13 @@ export default function BlessingsJourney({ lang, startDate }) {
             ))}
           </div>
           <p className="bj-hint">
-            {hi ? "दाएं-बाएं स्वाइप करें" : "Swipe sideways"}
+            {active === cards.length - 1
+              ? hi
+                ? "ऊपर स्वाइप करें"
+                : "Swipe up to continue"
+              : hi
+                ? "दाएं-बाएं स्वाइप करें"
+                : "Swipe sideways"}
           </p>
         </>
       )}

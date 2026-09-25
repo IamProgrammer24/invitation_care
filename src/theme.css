@@ -87,5 +87,5 @@ body {
 }
 
 :root:not([data-theme="pastel"]) .page-bg {
-  background-image: url("/images/bg-maroon.png");
+  background-image: url("/images/bg-maroon.webp");
 }

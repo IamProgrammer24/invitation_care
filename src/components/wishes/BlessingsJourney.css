@@ -34,6 +34,7 @@
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   overscroll-behavior-x: contain;
+  touch-action: pan-x;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -174,4 +175,5 @@
   letter-spacing: 1px;
   color: var(--accent);
   opacity: 0.85;
+  transition: opacity 0.3s ease;
 }

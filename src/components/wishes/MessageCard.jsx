@@ -12,7 +12,7 @@ export default function MessageCard({ message }) {
       >
         <img
           className="frame-img"
-          src="/images/card-arch.png"
+          src="/images/card-arch.webp"
           alt=""
           draggable="false"
         />
