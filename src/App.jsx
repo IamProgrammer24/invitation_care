@@ -6,7 +6,7 @@ import Toran from "./components/common/Toran";
 import Petals from "./components/common/Petals";
 import Hero from "./components/wishes/Hero";
 import MessageCard from "./components/wishes/MessageCard";
-import NineColours from "./components/wishes/NineColours";
+import BlessingsJourney from "./components/wishes/BlessingsJourney";
 import From from "./components/wishes/From";
 import ShareFooter from "./components/wishes/ShareFooter";
 import SwipeHint from "./components/common/SwipeHint";
@@ -67,7 +67,11 @@ export default function App() {
   const screens = [
     <Hero key="hero" play={started} />,
     <MessageCard key="msg" message={message} />,
-    <NineColours key="col" lang={config.lang} startDate={config.startDate} />,
+    <BlessingsJourney
+      key="col"
+      lang={config.lang}
+      startDate={config.startDate}
+    />,
     <From
       key="from"
       from={config.from}

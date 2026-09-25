@@ -1,4 +1,7 @@
 export default {
-  name: "YourBrand",
-  instagram: "yourbrand.invites",
+  name: "WebGrow",
+  instagram: "WebGrow.invites",
+  instagramUrl: "https://www.instagram.com/webgrow.studio26/",
+  upiId: "kin9@ptyes",
+  qrImage: "/images/upi-qr.jpeg",
 };

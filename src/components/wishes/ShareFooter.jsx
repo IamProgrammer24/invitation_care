@@ -80,11 +80,7 @@ export default function ShareFooter({ lang, message }) {
 
       <div className="credit">
         <p>Made with love by {brand.name}</p>
-        <a
-          href={`https://instagram.com/${brand.instagram}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={brand.instagramUrl} target="_blank" rel="noopener noreferrer">
           <svg
             width="13"
             height="13"
@@ -102,6 +98,20 @@ export default function ShareFooter({ lang, message }) {
           </svg>
           @{brand.instagram}
         </a>
+
+        <div className="credit-links">
+          <a href="/support" className="credit-pill">
+            🙏 {lang === "hi" ? "सहयोग करें" : "Support the creator"}
+          </a>
+          <a
+            href={brand.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="credit-pill"
+          >
+            ✨ {lang === "hi" ? "अपना बनवाएं" : "Want your own invite?"}
+          </a>
+        </div>
       </div>
     </footer>
   );

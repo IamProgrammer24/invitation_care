@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "./From.css";
 
 export default function From({ from, photo, lang }) {
-  const label = lang === "hi" ? "शुभकामनाओं सहित" : "With love,";
+  const label = lang === "hi" ? "स्नेह सहित" : "From,";
 
   return (
     <section className="section from">
